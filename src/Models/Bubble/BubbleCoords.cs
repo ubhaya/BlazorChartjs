@@ -12,7 +12,7 @@
         /// The x.
         /// </value>
         [JsonPropertyName("x")]
-        public int X { get; set; }
+        public float X { get; set; }
         /// <summary>
         /// Gets or sets the y.
         /// </summary>
@@ -20,7 +20,7 @@
         /// The y.
         /// </value>
         [JsonPropertyName("y")]
-        public int Y { get; set; }
+        public float Y { get; set; }
         /// <summary>
         /// Gets or sets the r.
         /// </summary>

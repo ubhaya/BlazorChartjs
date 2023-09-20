@@ -37,6 +37,12 @@ protected override async Task OnInitializedAsync()
             Data = BubbleDataExamples.SimpleBubble,
             BackgroundColor = Colors.PaletteBorder1.FirstOrDefault()
         });
+    _config1.Data.Datasets.Add(new BubbleDataset()
+        {
+            Label = "My First float/double dataset",
+            Data = BubbleDataExamples.SimpleBubbleFloat,
+            BackgroundColor = Colors.PaletteBorder1.LastOrDefault(),
+        });
 }
 </CodeSnippet>
 
@@ -59,8 +65,14 @@ protected override async Task OnInitializedAsync()
         _config1.Data.Datasets.Add(new BubbleDataset()
             {
                 Label = "My First Dataset",
-                Data = BubbleDataExamples.SimpleBubble,
+                Data = BubbleDataExamples.SimpleBubbleInt,
                 BackgroundColor = Colors.PaletteBorder1.FirstOrDefault()
+            });
+        _config1.Data.Datasets.Add(new BubbleDataset()
+            {
+                Label = "My First float/double dataset",
+                Data = BubbleDataExamples.SimpleBubbleFloat,
+                BackgroundColor = Colors.PaletteBorder1.LastOrDefault(),
             });
     }
 }
